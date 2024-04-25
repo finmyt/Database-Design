@@ -1,0 +1,28 @@
+Lab 2 
+
+Design Choices:
+Implemented the LRU eviction algorithm using a linked list to track page access. The least recently used page is evicted from the head of the list.
+Utilized a recursive algorithm in the findLeafPage function to navigate through internal and leaf pages.
+Developed split, steal, and merge functionalities for managing page overflows and underflows。
+
+Exercises Summary:
+Exercise 1: Implemented LRU eviction strategy with a linked list.
+Exercise 2: Used a recursive algorithm in findLeafPage.
+Exercise 3: Created split functionality for page overflow management.
+Exercise 4: Developed steal function for balancing pages.
+Exercise 5: Implemented merge functionality for combining pages.
+
+API Changes:
+No new functions were added in this lab.
+
+Work Duration:
+Completed the lab in three days while juggling other tasks.
+Found debugging with Java easier than C++.
+Split operations posed the most challenge but became manageable with clear steps.
+No missing or incomplete elements.
+
+
+
+
+
+
