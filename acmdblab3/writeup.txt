@@ -1,0 +1,22 @@
+Describe any design decisions you made.
+
+Ex1:
+Filter: Iterates through the iterator, halting when encountering a tuple that meets the specified criteria.
+Join: Implements a nested loop approach for joining.
+Ex2:
+IntegerAggregator: Utilizes a groupByMap for supporting operations and a countMap specifically for AVG operation.
+StringAggregator: Utilizes a countMap for COUNT operation.
+Ex3:
+InsertTuple: Searches for a page with available free slots, inserts the tuple into that page, and marks the corresponding page as dirty.
+DeleteTuple: Locates the page containing the tuple, empties the slot, and marks the relevant page as dirty.
+Ex4:
+For both operations, iterates through the iterator and then invokes relevant functions. Adjustments were made to certain parts of the iterator code to align with the requirements of the Delete operation.
+
+Discuss and justify any changes you made to the API:
+No changes were deemed necessary.
+
+Describe any missing or incomplete elements of your code:
+To the best of my knowledge, there are no missing or incomplete elements in the code.
+
+Describe how long you spent on the lab, and whether there was anything you found particularly difficult or confusing:
+I spent approximately 3 days on the lab. While nothing was particularly difficult, I found the documentation regarding Insert and Delete operations slightly confusing at first glance. Improving the clarity of the structure in this section would be beneficial.
