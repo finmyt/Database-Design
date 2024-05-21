@@ -1,0 +1,17 @@
+
+Writeup Lab 4
+
+Describe any design decisions you made.
+Ex1: Used an array of buckets to record the heights of the bars. No changes were made for StringHistogram.
+Ex2: First obtained the relevant TupleDesc, then checked and created the histograms. Used another scan to build the histograms and estimate the costs.
+Ex3: Applied a simple estimation method. Specifically, for range scans, used 30% of the product of cardinalities as the cost.
+Ex4: Implemented the Selinger optimizer according to the pseudocode.
+
+Discuss and justify any changes you made to the API.
+To my knowledge, no changes were necessary.
+
+Describe any missing or incomplete elements of your code.
+To my knowledge, there are no missing or incomplete elements.
+
+Describe how long you spent on the lab, and whether there was anything you found particularly difficult or confusing.
+Spent 2-3 days on the lab. 
