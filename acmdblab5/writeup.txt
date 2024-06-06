@@ -1,0 +1,15 @@
+Lab 5
+
+Design Decisions：
+I introduced a `PageLock` class to manage the lock status of a page. Each page can hold at most one exclusive lock and multiple shared locks. The class includes basic functions such as `addLock`, `releaseLock`, `isHolding`, `isExclusive`, and `relatedTid` for lock management.
+For deadlock detection, I implemented a dependency graph within the `BufferPool` class to represent the dependencies between pages and transactions. A Depth-First Search (DFS) algorithm is used to detect deadlocks.
+The locking granularity adheres to the instructions in the documentation, implementing locks at the page level.
+
+API Changes：
+To the best of my knowledge, I did not make any changes to the API.
+
+Missing or Incomplete Elements：
+To the best of my knowledge, there are no missing or incomplete elements in my code.
+
+Time Spent and Challenges：
+I spent three days on the lab. While there was nothing particularly difficult, the debugging process was time-consuming. I had to print information from tests to identify mistakes. It would be helpful to have an estimated completion time for each test, as sometimes the program gets stuck in an infinite loop even without causing a deadlock.
